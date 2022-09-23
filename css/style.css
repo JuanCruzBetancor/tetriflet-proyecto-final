@@ -11,6 +11,9 @@ header{
     position: sticky;
     top: 0;
 }
+.header-position{
+    position: relative;
+}
 header nav{
     background-color:rgb(216, 116, 2);
     border: solid rgb(243, 1, 1);
@@ -427,6 +430,9 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
+    header{
+        position: relative;
+    }
     .titulo{
         font-size: 3em;
     }
@@ -517,6 +523,9 @@ footer {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+    header{
+        position: relative;
+    }
     .top-rutas{
         padding: 2em;
         margin: 2em;
@@ -526,6 +535,12 @@ footer {
     }
     .formulario{
         margin: 2em;
+    }
+    .contenedorTitulo{
+        margin: 5em;
+    }
+    .titulo{
+        font-size: 3em;
     }
     .subtitulo{
         font-size: 2em;
