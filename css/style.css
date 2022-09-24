@@ -502,6 +502,34 @@ footer {
         grid-row-gap: 1em;
         margin: 1em;
     }
+    .img-container1 {
+        transform: none;
+        transition: none;
+    }
+    .img-container2{
+        transform: none;
+        transition: none;
+    }
+    .img-container3{
+        transform: none;
+        transition: none;
+    }
+    .img-container4{
+        transform: none;
+        transition: none;
+    }
+    .img-container5{
+        transform: none;
+        transition: none;
+    }
+    .img-container6{
+        transform: none;
+        transition: none;
+    }
+    .img-container7{
+        transform: none;
+        transition: none;
+    }
     .grid-rutas{
         grid-template-areas: 
             "menu"
