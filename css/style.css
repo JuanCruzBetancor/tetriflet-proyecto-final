@@ -37,7 +37,7 @@ header nav ul li i {
 header nav ul li a {
     text-decoration: none;
     color: #fff;
-    padding: 3em;
+    padding: 0em 2em;
     font-size: 1em;
 }
 .nav__li:hover{
@@ -46,11 +46,14 @@ header nav ul li a {
 }
 .nav__li:hover > a {
     color: rgb(73, 73, 73);
-    font-size: 1.3em;
-    transition: 1.5s;
+    font-size: 1em;
+    transition: 1s;
 }
 .nav__li:hover > i {
     color: gray
+}
+.menuResponsive{
+    display: none;
 }
 .menu {
     font-style: italic;
@@ -110,12 +113,12 @@ header nav ul li a {
 }
 
 .rutas-boton {
+    cursor: pointer;
     color: #fff;
     font-size: 1.5em;
     font-style: italic;
     font-family: 'Josefin Sans', sans-serif;
     padding: 1em 5em 1em 5em;
-    margin: 1em 1em;
     border: solid green;
     border-radius: 1em;
     background-color: rgb(21, 100, 21);
@@ -159,6 +162,7 @@ header nav ul li a {
 }
 
 .botonesContacto {
+    cursor: pointer;
     color: #fff;
     background-color: rgb(21, 100, 21);
     font-size: 1.5em;
@@ -245,6 +249,7 @@ header nav ul li a {
     justify-content: center;
 }
 .boton-de-contacto {
+    cursor: pointer;
     color: #fff;
     font-size: 1.5em;
     font-style: italic;
@@ -332,10 +337,10 @@ header nav ul li a {
     justify-content: center;
 }
 .tamaño-boton {
+    cursor: pointer;
     color: #fff;
     font-size: 1em;
     padding: 1em 16em;
-    margin: 2em;
     border: solid green;
     border-radius: 2em;
     background-color: rgb(21, 100, 21);
@@ -378,6 +383,7 @@ header nav ul li a {
     margin: 2em;
 }
 .enviar-form {
+    cursor: pointer;
     padding: 0.5em 13.5em;
     margin: 2em;
     background-color: green;
@@ -464,7 +470,23 @@ footer {
 }
 @media screen and (max-width: 767px) {
     header{
-        position: relative;
+        position: sticky;
+    }
+    .menu-destock{
+        display: none;
+    }
+    .menuResponsive{
+        display: block;
+        font-style: italic;
+        font-size: 1.5em;
+    }
+    .fa-solid{
+        color: aliceblue;
+        padding: 1em;
+    }
+    .navbar-toggler{
+        background-color: rgb(230, 227, 59);
+        border: solid rgb(243, 1, 1);
     }
     .titulo{
         font-size: 3em;
@@ -508,17 +530,23 @@ footer {
         width: 5em;
     }
     .formulario{
-        font-size: 1.5em;
         padding: 1em;
         margin: 1em;
         flex-wrap: nowrap;
+        font-size: initial;
+        line-height: initial;
+        font-family: 'Times New Roman', Times, serif;
     }
     .consulta-text{
-        padding: 0;
         margin: 0;
+        padding: 0;
+        font-size: initial;
+        line-height: initial;
     }
     .enviar-form{
         padding: 1em 5em;
+        font-size: initial;
+        line-height: initial;
     }
     .copy{
         font-size: 1.3em;
@@ -567,25 +595,35 @@ footer {
         grid-template-areas: 
             "menu"
             "contenido"
-            "publicidad"
-            "publicidad2"
             "pie";
-        row-gap: 1em;
-        justify-items: center;
     }
     .publicidad1{
-        max-width: 20em;
-        height: 20em;
+        display: none;
     }
     .publicidad2{
-        max-width: 20em;
-        height: 20em;
+        display: none;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     header{
         position: relative;
+    }
+    .menu-destock{
+        display: none;
+    }
+    .menuResponsive{
+        display: block;
+        font-style: italic;
+        font-size: 1.5em;
+    }
+    .fa-solid{
+        color: aliceblue;
+        padding: 1em;
+    }
+    .navbar-toggler{
+        background-color: rgb(230, 227, 59);
+        border: solid rgb(243, 1, 1);
     }
     .top-rutas{
         padding: 2em;
@@ -595,6 +633,7 @@ footer {
         margin: 0;
     }
     .formulario{
+        font-size: 1em;
         margin: 2em;
     }
     .contenedorTitulo{
@@ -660,31 +699,19 @@ footer {
         grid-row-end: 2;
     }
     .grid-rutas{
-        grid-template-columns:repeat(2, 1fr);
-        grid-template-rows: 4em 1fr 1fr 2em;
+        grid-template-columns:repeat(1, 1fr);
         grid-template-areas: 
-        "menu menu"
-        "contenido publicidad"
-        "contenido publicidad2"
-        "pie pie";
+        "menu"
+        "contenido"
+        "contenido"
+        "pie";
         align-items:center;
-        grid-gap: 2em;
     }
     .aside-grid{
-        display: grid;
-        justify-items: center;
+        display: none;
     }
     .aside-grid2{
-        display: grid;
-        justify-items: center;
-    }
-    .publicidad1{
-        max-width: 20em;
-        height: 30em;
-    }
-    .publicidad2{
-        max-width: 20em;
-        max-height: 30em;
+        display: none;
     }
 }
 @media screen and (min-width: 1024px) and (max-width: 2200px){
