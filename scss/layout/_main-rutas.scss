@@ -1,0 +1,45 @@
+.grid-rutas{
+    display: grid;
+
+    .header-grid{
+        grid-area: menu;
+    }
+    .main-grid{
+        grid-area: contenido;
+    }
+    .aside-grid{
+        grid-area: publicidad;
+    }
+    .aside-grid2{
+        grid-area: publicidad2;
+    }
+    .footer-grid{
+        grid-area: pie;
+    }
+    .publicidad1{
+        width: 25em;
+        height: 40em;
+        border-radius: 2em;
+    }
+    .boton-contacto{
+        @include propiedades-flex(wrap, row, center, center);
+        .boton-de-contacto {
+            @include boton(1.5em, 1em 6em, aliceblue, rgb(10, 90, 10));
+            border: solid aliceblue;
+        }
+        .boton-de-contacto:hover{
+            color: black;
+            background-color: rgb(9, 206, 9);
+        }
+    }
+    .top-rutas{
+        @include propiedades-flex(wrap, row, center, center);
+        font-size: 1.5em;
+        font-family: $fuente-secundaria;
+        color: aliceblue;
+        background-color: $background-listas;
+        margin: 1em 3em;
+        border-radius: 2em;
+        border: solid aliceblue;
+    }
+}

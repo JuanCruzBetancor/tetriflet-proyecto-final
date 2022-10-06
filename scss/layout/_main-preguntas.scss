@@ -1,0 +1,20 @@
+main{
+    .preguntas{
+        background-color: $background-listas;
+        @include propiedades-flex(wrap, column, center, center );
+        font-family: $fuente-secundaria;
+        border: solid aliceblue;
+    }
+    .boton-pyq{
+        @include propiedades-flex(wrap, row, center, center );
+        margin: 2em;
+        .tamaño-boton{
+            @include boton(1.5em, 1em 6em, aliceblue, rgb(10, 90, 10));
+            border: solid aliceblue;
+        }
+        .tamaño-boton:hover{
+            color: black;
+            background-color: rgb(9, 206, 9);
+    }
+}
+}

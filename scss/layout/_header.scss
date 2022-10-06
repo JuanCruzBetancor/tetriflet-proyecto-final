@@ -1,0 +1,44 @@
+header{
+    position: sticky;
+    top: 0;
+    background-color: $background-principal;
+    padding: 1em;
+    nav{
+        padding: 1em;
+        .menu{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            font-family: $fuente-principal;
+        li {
+            color: aliceblue;
+            list-style-type: none;
+        }
+        li:hover{
+            color: rgb(26, 240, 6);
+            transition: 0.5s;
+        }
+        li:hover >a {
+            color: rgb(26, 240, 6);
+            transition: 0.5s;
+        }
+        i{
+            font-size: 1.3em;
+            padding: 0.2em;
+        }
+        a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+        }
+    }
+}
+
+.menuResponsive{
+    display: none;
+}
+
+.header-position{
+    position: relative;
+}

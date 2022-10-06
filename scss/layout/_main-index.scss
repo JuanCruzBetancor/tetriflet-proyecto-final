@@ -1,0 +1,65 @@
+body{
+    background-color: rgb(56, 53, 53);
+}
+main{
+    .cajaTitulo{
+        padding: 2em;
+        margin: 2em 6em;
+        border: solid white;
+        border-radius: 2em;
+        @include propiedades-flex(wrap, row, center, center);
+        background-image:url(../multimedia/imagenes/fondotetris.jpg);
+        .titulo{
+            font-size: 4em;
+            color: aliceblue;
+            font-family: $fuente-secundaria;
+            font-weight: bold;
+            text-shadow: 5px 5px 5px black;
+        }
+    }
+    article{
+        @include propiedades-flex(wrap, row, center, center);
+        padding:2em;
+        margin: 2em;
+        font-size: 1.5em;
+        color: aliceblue;
+        font-family: $fuente-secundaria;
+        .subtitulo{
+            font-size: 2em;
+            margin: 1em;
+            font-family: $fuente-principal;
+        }
+    }
+    .botonRutas{
+        @include propiedades-flex(wrap, row, center, center);
+        .rutas-boton{
+            @include boton(1.5em, 1em 6em, aliceblue, rgb(10, 90, 10));
+            border: solid aliceblue;
+        }
+        .rutas-boton:hover{
+            color: black;
+            background-color: rgb(9, 206, 9);
+        }
+    }
+    .article2{
+        @include propiedades-flex(wrap, column, center, center);
+        background-color: rgb(37, 36, 36);
+        padding: 1em;
+        margin: 4em 9em;
+        font-family: $fuente-principal;
+        font-size: 1.5em;
+        border: solid aliceblue;
+        border-radius: 2em;
+    }
+    .botonNyC{
+        @include propiedades-flex(wrap, row, center, center);
+        .botonesContacto{
+            @include boton(1.5em, 1em 6em, aliceblue, rgb(10, 90, 10));
+            border: solid aliceblue;
+        }
+        .botonesContacto:hover{
+            color: black;
+            background-color: rgb(9, 206, 9);
+        }
+    }
+}

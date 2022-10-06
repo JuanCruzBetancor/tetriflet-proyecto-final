@@ -1,0 +1,13 @@
+footer{
+    padding: 3em;
+    background-color: $background-principal;
+    color: aliceblue;
+    font-family: $fuente-principal;
+    font-style: italic;  
+    font-size: 1.2em;
+    @include propiedades-flex(wrap, row, space-around, center);
+    .icon-footer:hover{
+        transform: scale(1.2, 1.2);
+        transition: 0.5s;
+    }
+}

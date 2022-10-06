@@ -1,0 +1,14 @@
+@mixin propiedades-flex ($wrap, $direction, $justify, $aling) {
+    
+    display: flex;
+    flex-wrap: $wrap;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-content: $aling;
+}
+@mixin boton($font, $padding, $color, $background) {
+    font-size: $font;
+    padding: $padding;
+    color: $color;
+    background-color: $background;
+}

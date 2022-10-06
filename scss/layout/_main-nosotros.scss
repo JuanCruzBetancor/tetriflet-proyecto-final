@@ -1,0 +1,24 @@
+main{
+    .googlemaps{
+        margin: 2em;
+        @include propiedades-flex(wrap, row, center, center);
+    }
+    .flota{
+        @include propiedades-flex(wrap, row, center, center);
+        color: aliceblue;
+        padding: 2em;
+        font-size: 3em;
+        font-family: $fuente-secundaria;
+    }
+    .ubicacion-img{
+        @include propiedades-flex(wrap, row, space-around, center);
+        .imagen{
+            max-width: 300px;
+            max-height: 300px;
+            width: auto;
+            height: auto;
+            margin-bottom: 2em;
+            border-radius: 3em;
+        }
+    }
+}
