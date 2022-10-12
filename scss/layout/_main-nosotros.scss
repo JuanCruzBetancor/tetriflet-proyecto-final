@@ -1,9 +1,11 @@
 main{
     .googlemaps{
+        /* Ubicacion mapa de google maps */
         margin: 2em;
         @include propiedades-flex(wrap, row, center, center);
     }
     .flota{
+        /* Posicion y estilo de subtitulo "nuestra flota" */
         @include propiedades-flex(wrap, row, center, center);
         color: aliceblue;
         padding: 2em;
@@ -11,8 +13,10 @@ main{
         font-family: $fuente-secundaria;
     }
     .ubicacion-img{
+        /* Posicion imagenes de camioneta de trabajo */
         @include propiedades-flex(wrap, row, space-around, center);
         .imagen{
+            /* Tamaño imagenes de camioneta de trabajo */
             max-width: 300px;
             max-height: 300px;
             width: auto;

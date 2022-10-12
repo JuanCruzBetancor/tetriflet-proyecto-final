@@ -1,5 +1,6 @@
 main{
     .contenedor-redes{
+        /* Estilo y posicion de subtitulo */
         @include propiedades-flex(wrap, row, center, center);
         padding: 2em;
         color: aliceblue;
@@ -8,20 +9,24 @@ main{
         font-style: italic;
     }
     .contenedorContacto{
+        /* Estilos caja contenedora y posicionamiento de elementos */
         @include propiedades-flex(wrap, row, space-evenly, center);
         background-color: $background-listas;
         padding: 2em;
         margin: 2em;
         border: solid aliceblue;
         .imagen2{
+            /* Tamaño de los iconos */
             max-width: 7.5em;
         }
         .imagen2:hover{
+            /* Efecto para agrandar los iconos */
             transition: all 2s;
             transform: scale(1.2, 1.2);
         }
     }
     .formulario{
+        /* Posicionamiento y estilos del formulario */
         @include propiedades-flex(wrap, column, center, center);
         background-color: $background-listas;
         padding: 2em;
@@ -32,25 +37,30 @@ main{
         align-items: center;
         border: solid aliceblue;
         .contenido-forms{
+            /* Posicionamiento central de contenido del formulario */
             @include propiedades-flex(wrap, column, center, center);
             line-height: 2;
             align-items: center;
             font-family: $fuente-principal;
         .consulta-text {
+            /* Tamaño de casillero de consulta */
             margin: 1em;
             max-width: 18em;
             max-height: 10em;
         }
         .casillas{
+            /* Separacion de casilleros */
             margin: 1em;
         }
     }
     .enviar-form{
+        /* Tamaño y estilo del boton enviar */
         @include boton(1em, 0.5em 6em, aliceblue, rgb(10, 90, 10));
         border: solid aliceblue;
         margin: 1em;
     }
     .enviar-form:hover{
+        /* Efecto boton enviar */
         color: black;
         background-color: rgb(9, 206, 9);
     }

@@ -1,5 +1,7 @@
+/* Medida para mobile */
 @media screen and (max-width: 767px){
     header{
+        /* Oculto el menu destock, activo el menu hamburguesa de bootstrap y cambio algunos estilos */
         position: sticky;
         .menu-destock{
             display: none;
@@ -21,6 +23,7 @@
             border: solid aliceblue;
         }
     }
+    /* Modifico medidas y tamaño de imagenes para vista mobile */
     main{
         article{
             padding: 0;
@@ -70,6 +73,7 @@
         }    
     }
     .grid-rutas{
+        /* Utilizo una sola columna, oculto publicidades y modifico medidas para adaptar el boton */
         grid-template-areas: 
             "menu"
             "contenido"
@@ -85,6 +89,7 @@
             }
     }
     .grid-container{
+        /* Adapto imgenes de galeria a mobile */
         grid-gap: 1em;
         .img-container{
             max-width: 100%;
@@ -94,8 +99,9 @@
     }
 }
 
-
+/* Medidas para tablet */
 @media screen and (min-width: 768px) and (max-width: 1023px){
+    /* Oculte menu destock, active el menu hamburguesa de bootstrap y le modifique estilos */
     header{
         .menu-destock{
             display: none;
@@ -118,6 +124,7 @@
         }
     }
     .grid-rutas{
+        /* Uso una sola columna para tablet y oculto publicidad */
         grid-template-columns:repeat(1, 1fr);
         grid-template-areas: 
         "menu"
@@ -133,6 +140,7 @@
         margin-bottom: 2em;
     }
     .grid-container{
+        /* Ubico imagenes de galeria en dos columnas */
         grid-template-columns:repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr) ;
         margin: 8em;
@@ -185,9 +193,10 @@
     }
 }
 
-
+/* Medida destock */
 @media screen and (min-width: 1024px) and (max-width: 2200px){
     .grid-rutas{
+        /* Utilizo 3 columnas para ubicar elementos con grid area */
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: 6em 1fr 1fr 6em;
         grid-template-areas: 
@@ -198,6 +207,7 @@
         grid-gap: 2em;
     }
     .grid-container{
+        /* Ubicacion de imagenes de galeria */
     grid-template-columns:repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr) ;
         margin: 8em;

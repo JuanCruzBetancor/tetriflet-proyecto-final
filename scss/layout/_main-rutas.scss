@@ -1,4 +1,5 @@
 .grid-rutas{
+    /* Posicionando elementos con grid */
     display: grid;
 
     .header-grid{
@@ -17,22 +18,27 @@
         grid-area: pie;
     }
     .publicidad1{
+        /* Tamaño de publicidades y estilo del borde */
         width: 25em;
         height: 40em;
         border-radius: 2em;
     }
     .boton-contacto{
+        /* Posicionamiento boton de contacto */
         @include propiedades-flex(wrap, row, center, center);
         .boton-de-contacto {
+            /* Tamaño y estilo boton de contacto */
             @include boton(1.5em, 1em 6em, aliceblue, rgb(10, 90, 10));
             border: solid aliceblue;
         }
         .boton-de-contacto:hover{
+            /* Efecto boton de contacto */
             color: black;
             background-color: rgb(9, 206, 9);
         }
     }
     .top-rutas{
+        /* Posicion y estilo lista top rutas */
         @include propiedades-flex(wrap, row, center, center);
         font-size: 1.5em;
         font-family: $fuente-secundaria;

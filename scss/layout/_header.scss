@@ -1,8 +1,11 @@
+/* Posicion y estilo header */
 header{
     position: sticky;
     top: 0;
     background-color: $background-principal;
+    border: solid aliceblue;
     padding: 1em;
+    /* Estilos y efectos del menu de navegacion */
     nav{
         padding: 1em;
         .menu{
@@ -34,11 +37,11 @@ header{
         }
     }
 }
-
+/* Oculto menu de navegacion para responsive */
 .menuResponsive{
     display: none;
 }
-
+/* Menú de galeria quieto para apreciar imagenes */
 .header-position{
     position: relative;
 }
