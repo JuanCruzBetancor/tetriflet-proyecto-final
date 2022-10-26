@@ -406,7 +406,9 @@ footer {
     font-size: 1em; }
   .grid-rutas {
     /* Utilizo una sola columna, oculto publicidades y modifico medidas para adaptar el boton */
-    grid-template-areas: "menu" "contenido" "pie"; }
+    grid-template-areas: "menu"
+ "contenido"
+ "pie"; }
     .grid-rutas .publicidad1 {
       display: none; }
     .grid-rutas .boton-contacto {
@@ -441,7 +443,10 @@ footer {
   .grid-rutas {
     /* Uso una sola columna para tablet y oculto publicidad */
     grid-template-columns: repeat(1, 1fr);
-    grid-template-areas: "menu" "contenido" "contenido" "pie";
+    grid-template-areas: "menu"
+ "contenido"
+ "contenido"
+ "pie";
     align-items: center; }
     .grid-rutas .publicidad1 {
       display: none; }
@@ -497,7 +502,10 @@ footer {
     /* Utilizo 3 columnas para ubicar elementos con grid area */
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 6em 1fr 1fr 6em;
-    grid-template-areas: "menu menu menu" "contenido contenido publicidad" "contenido contenido publicidad2" "pie pie pie";
+    grid-template-areas: "menu menu menu"
+ "contenido contenido publicidad"
+ "contenido contenido publicidad2"
+ "pie pie pie";
     grid-gap: 2em; }
   .grid-container {
     /* Ubicacion de imagenes de galeria */
